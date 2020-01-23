@@ -4,7 +4,6 @@
     height:40%;
     display:block;
     margin:auto;
-    align:center;
     .info{
         display:inline-block;
         padding-left:3%;
@@ -12,6 +11,19 @@
         float:left;
         width:30%;
         height:100%;
+
+        p{
+            text-align:center;
+            font-weight: bold;
+        }
+        div{
+            width: 100%;
+            text-align: center;
+        }
+
+        h2{
+            text-align: center;
+        }
 
         img{
             width:30%;
@@ -23,8 +35,12 @@
 
         }
         div{
+            a{
+            }
+
             p{
                 text-align:center;
+                font-weight: bold;
             }
         }
 

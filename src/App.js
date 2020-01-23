@@ -6,6 +6,7 @@ import Sermon from './components/Sermon.js';
 import Service from './components/Service.js';
 import Story from './components/Story.js';
 import Location from './components/Location.js';
+import Vision from './components/Vision.js';
 import main1 from "./image/main1.jpg";
 import main2 from "./image/main2.jpg";
 // import main3 from "./image/main3.jpg";
@@ -41,7 +42,7 @@ class App extends Component {
       
       switch(Number(this.state.selectedId)){
         case 1:
-          _content = "";
+          _content = <Vision></Vision>;
           break;
           case 2: _content = <Service></Service>
           break;
