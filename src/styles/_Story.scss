@@ -1,0 +1,36 @@
+.storyContent{
+    width:80%;
+    height:50%;
+    margin:auto;
+    .news{
+        display:inline-block;
+        width:30%;
+        height:80%;
+        margin-left:13%;
+    
+     
+          
+            a{
+                margin-top:10%;
+                background:lightblue;
+                padding-top:40%;
+                font-size:32px;
+                color:white;
+                display:block;
+                font-weight:bold;
+
+                height:60%;
+                width:100%;
+                text-align:center;
+            white-space:nowrap;
+
+             &:hover{
+                 background-color:orange;
+                 
+
+             }   
+            }
+        
+        
+    }
+}

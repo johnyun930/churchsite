@@ -1,0 +1,35 @@
+
+
+div.movie{
+    
+    margin:0 auto;
+    height:100%;
+    padding-top: 5%;
+
+    iframe{
+        display: block;
+        margin: auto;
+        padding-bottom: 1%;
+    }
+    p{
+        height: 30%;
+        a{
+            padding-top: 5px;
+            color: white;
+            font-weight: bold;
+            font-size: 2vw;
+            margin: 10px auto;
+            width: 63%;
+            display:block;
+            text-align: center;
+            background-color: yellowgreen;
+            height: 30%;
+            box-sizing: border-box;
+        
+           &:hover{
+            background-color: orange;
+           } 
+        
+        }
+    }
+}

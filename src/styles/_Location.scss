@@ -1,0 +1,32 @@
+#location{
+    padding-top:3%;
+    width:90%;
+    height:40%;
+    display:block;
+    margin:auto;
+    align:center;
+    .info{
+        display:inline-block;
+        padding-left:3%;
+        
+        float:left;
+        width:30%;
+        height:100%;
+
+        img{
+            width:30%;
+            height:30%;
+        }
+        #video{
+            width:10%;
+            height:10%;
+
+        }
+        div{
+            p{
+                text-align:center;
+            }
+        }
+
+    }
+}

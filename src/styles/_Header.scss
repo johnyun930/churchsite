@@ -1,0 +1,130 @@
+
+@mixin full{
+    width:100%;
+    height:100%;
+}
+@mixin contents{
+    h2{
+       margin-left:10vw;
+        padding-left: 10px;
+        float:left
+        
+    }
+    ul.nav-contents{
+        margin-right:10vw;
+       float:right;
+       
+        li{
+            list-style:none;
+            float:left;
+            padding:10px;
+            a{
+                display:block;
+            font-size: 17px;
+                
+            }
+        }
+    }
+    &::after{
+        content:"";
+        clear:both;
+    }
+}
+html{
+    @include full;
+}
+
+body{
+    @include full;
+
+}
+div#root{
+    @include full;
+
+}
+.App{
+    @include full;
+}
+
+a{
+    text-decoration:none;
+    color:white;
+    font-weight:bold;
+}
+@mixin bgimage($address) {
+    background-image: url($address);
+    background-repeat:no-repeat;
+    background-size: 100% 100%;
+    
+}
+
+    .main{
+        height:80%;
+        background: lightblue;
+        @include contents;
+        @include bgimage('../image/main1.jpg');
+
+    }
+    .service,.sermon,.story,.location,.introduction{
+        height:70%;
+        background: lightblue;
+        @include contents;
+    }
+  
+    
+
+    .introduction{
+        @include bgimage('../image/intro.jpg');
+    }
+    
+    .sermon{
+        @include bgimage('../image/sermon.jpg');
+      
+
+    }
+
+    .story{
+        @include bgimage('../image/story.jpg');
+    }
+
+    .service{
+        @include bgimage('../image/service2.jpg');
+    }
+    .location{
+        @include bgimage('../image/location.jpg');
+    }
+
+    .head{
+        margin: 0 auto;
+        width: 100%;
+        height: 30%;
+        &::before{
+            clear:both;
+            content:"";
+            display:block;
+        }
+        h2{
+            text-align: center;
+            font-size: 50px;
+            color:white;
+            display:block;
+            width: 100%;
+            height: 40%;
+            box-sizing: border-box;
+            margin: 5% auto;
+            margin-bottom: 3%;
+
+        }
+        p{
+            color:white;
+            font-size: 25px;
+            font-weight: bold;
+            text-align: center;
+            &::before{
+                clear: both;
+                content: "";
+                display: block;
+            }
+        }
+    }
+
