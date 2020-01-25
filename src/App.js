@@ -9,7 +9,7 @@ import Location from './components/Location.js';
 import Vision from './components/Vision.js';
 import main1 from "./image/main1.jpg";
 import main2 from "./image/main2.jpg";
-// import main3 from "./image/main3.jpg";
+ import main3 from "./image/main3.jpg";
 import './App.scss';
 
 class App extends Component {
@@ -19,6 +19,7 @@ class App extends Component {
       mode: "main",
       cname: "main",
       selectedId:0,
+      animate: true,
       contents: [
         {id:1,cname:"introduction",title:"교회 소개",eng:"Introduce Lifeway church"},
         {id:2,cname:"service",title:"예배 안내",eng:"Lifeway Service"},
@@ -65,47 +66,28 @@ class App extends Component {
 
 }
 
-// getHeadContent(){
 
-//   var head =   
-//    if(this.state.selectedId!==0){ 
-//   for(var i=0;i<this.state.contents.length;i++){
-//     if(this.state.selectedId===this.state.contents[i].id){
-//       head =  <Header cname={this.state.cname} mode={this.state.mode} data={this.state.contents}  onChangePage={
-//         function(_mode,_cname){
-//           this.setState({
-//             mode:_mode,
-//             cname: _cname,
-//           })
-//         }.bind(this)
-//           }></Header>
-//           break;
-//         }
-//   }
-// }
-//   return head;
-// }
 
   
   
   render(){
-  //   var i = 0;
-  //   var a = function(){
-  //       var a = document.getElementsByClassName("main")[0];
-  //       var images = [main1,main2,main3];
-  //       a.style.backgroundImage = `url(${images[i]})`;
-  //       i++;
-  //       if(i===3){
-  //           i=0;
-  //       }
-  //       console.log(a);
-  //       console.log(images[i]);
-  //   }
-  // if(this.state.mode==="main"){
-  //   setInterval(a,3000);
-  // }else{
-  //   clearInterval(a);
-  // }
+    // var i = 0;
+    // var a = function(){
+    //     var a = document.getElementsByClassName("main")[0];
+    //     var images = [main1,main2,main3];
+    //     a.style.backgroundImage = `url(${images[i]})`;
+    //     i++;
+    //     if(i===3){
+    //         i=0;
+    //     }
+    //     console.log(a);
+    //     console.log(images[i]);
+    // }
+    // var changImg = setInterval(a,3000);
+  
+    // if(this.state.animate===false){
+    // clearInterval(changImg);
+    // }  
   
 
 
@@ -118,7 +100,9 @@ class App extends Component {
       this.setState({
         mode:_mode,
         cname: _cname,
-        selectedId:_id
+        selectedId:_id,
+        animate:false
+
       })
     }.bind(this)
 
