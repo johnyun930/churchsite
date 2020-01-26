@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "7da00e059135c5ded4e3b70be8f3fd43",
+    "revision": "a1e3ad0dada6430831e07bab1be8d7e6",
     "url": "/churchsite/index.html"
   },
   {
-    "revision": "e97814b7bb83ca3cb3d1",
-    "url": "/churchsite/static/css/main.0feb9306.chunk.css"
+    "revision": "0d2b19ee07c4d7452aeb",
+    "url": "/churchsite/static/css/main.6702e128.chunk.css"
   },
   {
     "revision": "cc436d2e0496f9441a0a",
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/churchsite/static/js/2.12709d46.chunk.js.LICENSE"
   },
   {
-    "revision": "e97814b7bb83ca3cb3d1",
-    "url": "/churchsite/static/js/main.b1c1030c.chunk.js"
+    "revision": "0d2b19ee07c4d7452aeb",
+    "url": "/churchsite/static/js/main.68f01347.chunk.js"
   },
   {
     "revision": "0fd00e4775b073812596",
@@ -46,10 +46,6 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "a985d6c95cbecd113e91f26d1dcd64df",
     "url": "/churchsite/static/media/main2.a985d6c9.jpg"
-  },
-  {
-    "revision": "d4e5a2c71b89b7fdfdd109dd86529288",
-    "url": "/churchsite/static/media/main3.d4e5a2c7.jpg"
   },
   {
     "revision": "000f46dbb98c8abfab017337f5648819",
